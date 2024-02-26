@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Github Issues Project</title>
+  </head>
+  <body>
+    <div class="heading">
+      <a href="https://github.com/kevinjxhnn/esExercises/issues"
+        ><img src="./images/icons8-github.svg"
+      /></a>
+      <!-- Cick icon to navigate to github issue page -->
+      <h1>Github Issues</h1>
+    </div>
+
+    <section class="create-section">
+      <h2>Want To Create A New Issue?</h2>
+      <div class="title-container">
+        <input
+          id="issue-title"
+          type="text"
+          placeholder="Enter title for the issue..."
+        />
+      </div>
+
+      <div class="body-container">
+        <textarea
+          id="issue-body"
+          placeholder="Enter the description for the issue..."
+        ></textarea>
+      </div>
+
+      <div class="button-div">
+        <button class="create-issue-button">Create Issue</button>
+      </div>
+    </section>
+
+    <section class="issues-container open">
+      <h2>Open Issues:-</h2>
+      <button class="closed-button">See Closed</button>
+      <ul id="list-of-issues"></ul>
+    </section>
+
+    <section class="issues-container closed">
+      <h2>Closed Issues:-</h2>
+      <button class="open-button">See Open</button>
+      <ul class="closed-issues"></ul>
+    </section>
+
+    <div class="snackbar">
+      <div class="snackbar-content"></div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
